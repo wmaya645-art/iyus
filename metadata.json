@@ -1,0 +1,5 @@
+{
+  "name": "Bel Sekolah Otomatis",
+  "description": "Aplikasi bel sekolah otomatis dengan pengumuman suara cerdas menggunakan Gemini TTS.",
+  "requestFramePermissions": []
+}
