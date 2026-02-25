@@ -37,7 +37,7 @@ export default function App() {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [schedule, setSchedule] = useState<ScheduleItem[]>([]);
   const [settings, setSettings] = useState<AppSettings>({
-    schoolName: 'SMP & SMA Arraudhoh',
+    schoolName: 'SMP ISLAM ARRAUDHOH',
     isAutoEnabled: true,
     voiceName: 'Kore'
   });
@@ -91,7 +91,7 @@ export default function App() {
         const savedSettings = localStorage.getItem('school_bell_settings');
         setSchedule(savedSchedule ? JSON.parse(savedSchedule) : DEFAULT_SCHEDULE);
         setSettings(savedSettings ? JSON.parse(savedSettings) : {
-          schoolName: 'SMP & SMA Arraudhoh',
+          schoolName: 'SMP ISLAM ARRAUDHOH',
           isAutoEnabled: true,
           voiceName: 'Kore'
         });
@@ -167,7 +167,7 @@ export default function App() {
       });
 
       // 2. Prepare Announcement Text
-      const greeting = "Assalamualaikum warahmatullohi wabarokatuh, kepada siswa SMP dan SMA Arraudhoh. ";
+      const greeting = "Assalamualaikum warahmatullohi wabarokatuh, kepada siswa SMP ISLAM ARRAUDHOH. ";
       const text = `${greeting} Perhatian. Jam ke ${item.period}. Pukul ${item.startTime}. ${item.gender} Guru ${item.teacher}, pengampu mata pelajaran ${item.subject}, dipersilakan masuk kelas ${item.className}. Selamat belajar.`;
       
       // 3. Generate and Play Announcement
@@ -318,7 +318,7 @@ export default function App() {
       {/* Running Text / Marquee */}
       <div className="bg-amber-400 text-indigo-900 py-2 overflow-hidden border-b border-indigo-900/20 shadow-inner">
         <div className="whitespace-nowrap animate-marquee font-bold uppercase tracking-[0.2em] text-sm">
-          Selamat Datang di SMP/SMA ARRAUDHOH Kec. Klapanunggal Kab. Bogor — Selamat Datang di SMP/SMA ARRAUDHOH Kec. Klapanunggal Kab. Bogor — Selamat Datang di SMP/SMA ARRAUDHOH Kec. Klapanunggal Kab. Bogor
+          Selamat Datang di SMP ISLAM ARRAUDHOH Kec. Klapanunggal Kab. Bogor — Selamat Datang di SMP ISLAM ARRAUDHOH Kec. Klapanunggal Kab. Bogor — Selamat Datang di SMP ISLAM ARRAUDHOH Kec. Klapanunggal Kab. Bogor
         </div>
       </div>
 
@@ -610,7 +610,7 @@ export default function App() {
         <div className="flex justify-center items-center gap-4 opacity-30 mb-2">
           <div className="h-px w-12 bg-indigo-900"></div>
           <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-indigo-900">
-            Arraudhoh Smart Bell System
+            SMP ISLAM ARRAUDHOH Smart Bell System
           </p>
           <div className="h-px w-12 bg-indigo-900"></div>
         </div>
